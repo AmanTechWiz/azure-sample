@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minimal Greeting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">Welcome</h1>
+
+    <form id="nameForm" class="row" autocomplete="off">
+      <div style="flex:1">
+        <label for="nameInput" class="label">Your name</label>
+        <input id="nameInput" name="name" class="input" placeholder="Enter your name" />
+      </div>
+      <div style="display:flex;align-items:flex-end">
+        <button type="submit" class="btn">Save</button>
+      </div>
+    </form>
+
+    <p id="greeting" class="greeting">Hello — stranger.</p>
+
+    <div class="row" style="margin-top:6px">
+      <div class="time-box">
+        <span class="label">Current time</span>
+        <div id="time" class="time">--:--:--</div>
+      </div>
+
+      <div class="counter-box">
+        <span class="label">Counter</span>
+        <div class="counter-row">
+          <button id="decBtn" class="icon-btn">−</button>
+          <div id="count" class="count">0</div>
+          <button id="incBtn" class="icon-btn">+</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

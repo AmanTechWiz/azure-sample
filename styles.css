@@ -1,0 +1,43 @@
+:root{
+  --bg:#000;
+  --fg:#fff;
+  --muted:#bbb;
+  --accent:#fff;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--fg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+}
+.card{
+  width:100%;
+  max-width:520px;
+  padding:28px;
+  border:1px solid rgba(255,255,255,0.06);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+}
+.title{margin:0 0 12px 0; font-size:20px; letter-spacing:0.4px}
+.row{display:flex;gap:12px;align-items:center}
+.label{display:block;color:var(--muted);font-size:12px;margin-bottom:6px}
+.input{flex:1;padding:10px 12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.08);color:var(--fg);outline:none}
+.btn{padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:var(--fg);cursor:pointer}
+.greeting{margin:18px 0 22px;font-size:18px;color:var(--fg)}
+.time-box,.counter-box{flex:1}
+.time{font-family:monospace;font-size:18px;color:var(--fg);margin-top:6px}
+.counter-row{display:flex;align-items:center;gap:12px;margin-top:6px}
+.icon-btn{width:40px;height:40px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:var(--fg);font-size:18px;cursor:pointer}
+.count{min-width:48px;text-align:center;font-family:monospace;font-size:18px}
+
+@media (max-width:520px){
+  .row{flex-direction:column;align-items:stretch}
+  .counter-row{justify-content:space-between}
+}
