@@ -6,7 +6,7 @@ This project contains a minimal black-and-white single-page site that:
 - Displays the current time (updates every second).
 - Provides a counter with + and − buttons (persisted in localStorage).
 
-Files added to the project root:
+Files added to the project root: rt
 
 - [index.html](index.html)
 - [styles.css](styles.css)
