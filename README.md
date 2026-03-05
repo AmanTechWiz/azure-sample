@@ -1,4 +1,4 @@
-# azure-sample
+# Minimal greeting
 
 This project contains a minimal black-and-white single-page site that:
 
